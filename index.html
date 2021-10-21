@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body style= "text-align: center;background-color: black;">
+    <h1 style="color: white;">Date</h1>
+    <p id="d1" style="color: white;"></p>
+    <p id="d2" style="color: white;"></p>
+    <p id="d3" style="color: white;"></p>
+    <p id="d4" style="color: white;"></p>
+<script>
+    var today = new Date();
+    var dd = today.getDate();
+
+    var mm = today.getMonth()+1; 
+    var yyyy = today.getFullYear();
+
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+     today = mm+'-'+dd+'-'+yyyy;
+     document.getElementById("d1").innerHTML =(today);
+     today = mm+'/'+dd+'/'+yyyy;
+     document.getElementById("d2").innerHTML =(today);
+     today = dd+'-'+mm+'-'+yyyy;
+     document.getElementById("d3").innerHTML =(today);
+     today = dd+'/'+mm+'/'+yyyy;
+     document.getElementById("d4").innerHTML =(today);
+
+
+</script>
+</body>
+</html>
